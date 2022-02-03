@@ -1,0 +1,50 @@
+﻿@model MVCLogin.Models.Files
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Files</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Attorney)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attorney)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaimentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaimentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaimentSurname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaimentSurname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaimentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaimentID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.No }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
